@@ -14,12 +14,14 @@ function curl($url, $params = array(), $is_coockie_set = false) {
  
 	if(!$is_coockie_set) {
 		/* STEP 1. let’s create a cookie file */
-		$ckfile = tempnam ("/tmp", "CURLCOOKIE");
+		$ckfile = tempnam("/tmp", "CURLCOOKIE");
  
 		/* STEP 2. visit the homepage to set the cookie properly */
-		$ch = curl_init ($url);
-		curl_setopt ($ch, CURLOPT_COOKIEJAR, $ckfile);
-		curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
+		$ch = curl_init($url);
+		curl_setopt($ch, CURLOPT_COOKIEJAR, $ckfile);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.73.11 (KHTML, like Gecko) Version/6.1.1 Safari/537.73.11");
+
 		$output = curl_exec ($ch);
 	}
  
@@ -38,8 +40,9 @@ function curl($url, $params = array(), $is_coockie_set = false) {
 	$Url = $url.$str;
  
 	$ch = curl_init ($Url);
-	curl_setopt ($ch, CURLOPT_COOKIEFILE, $ckfile);
-	curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_COOKIEFILE, $ckfile);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.73.11 (KHTML, like Gecko) Version/6.1.1 Safari/537.73.11");
  
 	$output = curl_exec ($ch);
 	return $output;
