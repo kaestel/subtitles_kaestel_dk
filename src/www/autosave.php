@@ -21,6 +21,7 @@ $temp_file = PRIVATE_FILE_PATH."/".$project_name.".temp";
 
 if($original_language && $translation_language && $original_language != $translation_language) {
 
+	print $temp_file."<br>";
 	file_put_contents($temp_file, $original_language.",".$translation_language);
 
 	if($sections) {
