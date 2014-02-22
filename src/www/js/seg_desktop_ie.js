@@ -3176,7 +3176,7 @@ Util.Objects["translation"] = new function() {
 		}
 		scene.autosave = function() {
 			u.bug("auto save")
-			if(this.original_language.selectedIndex == 0 || this.original_language.selectedIndex == 0) {
+			if(this.original_language.selectedIndex == 0 || this.translation_language.selectedIndex == 0) {
 				alert("select language first");
 			}
 			else {
