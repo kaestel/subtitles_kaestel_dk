@@ -145,9 +145,8 @@ if($file):
 			<span class="translation">
 <?			if($translation_language && count($translations) == count($subtitles)):
 				preg_match("/([\d]+)[\s]+([\d:,]+)[\s->]+([\d:,]+)[\s]+([^$]+)/", $translations[$i], $translation_matches);
-?>
+			endif; ?>
 				<textarea name="translation[<?= $i ?>]"><?= isset($translation_matches[4]) ? $translation_matches[4] : "" ?></textarea>
-<?			endif; ?>
 			</span>
 		</div>
 	</form>
