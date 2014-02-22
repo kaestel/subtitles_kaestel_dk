@@ -1,0 +1,51 @@
+#header .servicenavigation {
+/*	display: none;*/
+}
+#header .servicenavigation .navigation {display: none;}
+
+
+#content .scene.front div.upload {border: 4px dashed #dedede; border-radius: 15px; padding: 40px 100px; margin: 0 0 30px;}
+#content .scene.front div.upload label {display: block; text-align: center; font-size: 20px; text-transform: uppercase; color: #dedede;}
+#content .scene.front div.upload input {opacity: 0; display: none;}
+
+
+#content .scene.front ul {}
+#content .scene.front ul li {padding: 0 0 10px;}
+#content .scene.front ul li a {text-decoration: underline;}
+
+
+#content .scene.workspace ul {}
+#content .scene.workspace ul li {padding: 0 0 10px; display: block;}
+#content .scene.workspace ul li a {text-decoration: underline;}
+
+
+#content .scene.translation {}
+	
+#content .scene.translation div.header {}
+#content .scene.translation div.header span {display: inline-block; vertical-align: top;}
+#content .scene.translation div.header span.index {width: 40px; text-align: right;}
+#content .scene.translation div.header span.start {width: 110px;}
+#content .scene.translation div.header span.end {width: 110px;}
+#content .scene.translation div.header span.subtitle {width: 370px;}
+#content .scene.translation div.header span.translation {width: 370px;}
+
+
+#content .scene.translation div.section {padding: 5px 0; border-bottom: 1px solid #dedede;}
+#content .scene.translation div.section span {display: inline-block; vertical-align: top;}
+
+#content .scene.translation div.section ul.tools {display: inline-block; vertical-align: top; width: 70px;}
+#content .scene.translation div.section ul.tools li {text-decoration: underline; cursor: pointer;}
+
+#content .scene.translation div.section span.index {width: 40px; text-align: right;}
+
+#content .scene.translation div.section span.start {width: 110px;}
+#content .scene.translation div.section span.start input {width: 100px;}
+
+#content .scene.translation div.section span.end {width: 110px;}
+#content .scene.translation div.section span.end input {width: 100px;}
+
+#content .scene.translation div.section span.subtitle {width: 370px;}
+#content .scene.translation div.section span.subtitle textarea {width: 360px; height: 40px;}
+
+#content .scene.translation div.section span.translation {width: 370px;}
+#content .scene.translation div.section span.translation textarea {width: 360px; height: 40px;}

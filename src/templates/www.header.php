@@ -25,7 +25,8 @@
 
 	<div id="header">
 		<ul class="servicenavigation">
-			<li class="keynav navigation nofollow"><a href="#navigation" rel="nofollow">Til hovedmenuen</a></li>
+			<li class="keynav front"><a href="/">Frontpage</a></li>
+			<li class="keynav navigation nofollow"><a href="#navigation" rel="nofollow">Navigation</a></li>
 		</ul>
 	</div>
 
