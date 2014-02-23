@@ -3121,24 +3121,24 @@ Util.Objects["translation"] = new function() {
 		}
 		for(i = 0; node = scene.nodes[i]; i++) {
 			node.scene = scene;
-			node._index = u.qs(".index", node);
+			node._index = u.qs("span.index", node);
 			node._index.node = node;
-			node._start = u.qs(".start input", node);
+			node._start = u.qs("span.start input", node);
 			node._start.node = node;
 			node._start.onchange = function() {
 				this.node.scene.autosave();
 			}
-			node._end = u.qs(".end input", node);
+			node._end = u.qs("span.end input", node);
 			node._end.node = node;
 			node._end.onchange = function() {
 				this.node.scene.autosave();
 			}
-			node._subtitle = u.qs(".subtitle textarea", node);
+			node._subtitle = u.qs("span.subtitle textarea", node);
 			node._subtitle.node = node;
 			node._subtitle.onchange = function() {
 				this.node.scene.autosave();
 			}
-			node._translation = u.qs(".translation textarea", node);
+			node._translation = u.qs("span.translation textarea", node);
 			node._translation.node = node;
 			node._translation.onchange = function() {
 				this.node.scene.autosave();
