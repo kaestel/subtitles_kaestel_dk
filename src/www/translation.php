@@ -88,16 +88,16 @@ if($file):
 			<span class="subtitle">
 				<label>Original language</label>
 				<select name="original_language">
-					<option value="">Choose language</option>
+					<!--option value="">Choose language</option-->
 					<option value="en"<?= $original_language == "en" ? ' selected="selected"' : '' ?>>English</option>
-					<option value="da"<?= $original_language == "da" ? ' selected="selected"' : '' ?>>Danish</option>
+					<!--option value="da"<?= $original_language == "da" ? ' selected="selected"' : '' ?>>Danish</option-->
 				</select>
 			</span>
 			<span class="translation">
 				<label>Translate to</label>
 				<select name="translation_language">
-					<option value="">Choose language</option>
-					<option value="en"<?= $translation_language == "en" ? ' selected="selected"' : '' ?>>English</option>
+					<!--option value="">Choose language</option-->
+					<!--option value="en"<?= $translation_language == "en" ? ' selected="selected"' : '' ?>>English</option-->
 					<option value="da"<?= $translation_language == "da" ? ' selected="selected"' : '' ?>>Danish</option>
 				</select>
 			</span>
