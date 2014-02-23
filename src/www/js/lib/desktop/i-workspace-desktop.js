@@ -7,12 +7,12 @@ Util.Objects["translation"] = new function() {
 		scene.nodes = u.qsa(".section", scene);
 
 
-		scene.original_language = u.qs(".subtitle select", scene.hN);
+		scene.original_language = u.qs("span.subtitle select", scene.hN);
 		scene.original_language.scene = scene;
 		scene.original_language.onchange = function() {
 			this.scene.autosave();
 		}
-		scene.translation_language = u.qs(".translation select", scene.hN);
+		scene.translation_language = u.qs("span.translation select", scene.hN);
 		scene.translation_language.scene = scene;
 		scene.translation_language.onchange = function() {
 			this.scene.autosave();
