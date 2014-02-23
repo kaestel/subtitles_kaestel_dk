@@ -85,12 +85,12 @@ Util.Objects["translation"] = new function() {
 		// request google translation and insert into translation textarea
 		scene.translateNode = function(node) {
 			
-			if(this.original_language.selectedIndex == 0 || this.translation_language.selectedIndex == 0) {
-				window.scrollTo(0, 0);
-
-				alert("select language first");
-			}
-			else {
+			// if(this.original_language.selectedIndex == 0 || this.translation_language.selectedIndex == 0) {
+			// 	window.scrollTo(0, 0);
+			// 
+			// 	alert("select language first");
+			// }
+			// else {
 				node.response = function(response) {
 					this._translation.value = u.qs("#translation", response).innerHTML;
 
@@ -98,7 +98,7 @@ Util.Objects["translation"] = new function() {
 				}
 
 				u.request(node, "/translate/" + this.original_language.options[this.original_language.selectedIndex].value + "/" + this.translation_language.options[this.translation_language.selectedIndex].value, {"params":"text="+node._subtitle.value.replace("\n", " "), "method":"post"});
-			}
+//			}
 		}
 
 
