@@ -2808,10 +2808,6 @@ Util.Objects["translation"] = new function() {
 		}
 		scene.autosave = function() {
 			u.bug("auto save")
-			if(this.original_language.selectedIndex == 0 || this.translation_language.selectedIndex == 0) {
-				alert("select language first");
-			}
-			else {
 				var params = "";
 				params += "project_name="+this.project_name+"&";
 				params += "original_language="+this.original_language.options[this.original_language.selectedIndex].value+"&";
@@ -2825,7 +2821,6 @@ Util.Objects["translation"] = new function() {
 				scene.response = function(response) {
 				}
 				u.request(this, "/autosave", {"params":params, "method":"post"});
-			}
 		}
 	}
 }
