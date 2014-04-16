@@ -143,18 +143,18 @@ if($file):
 				<textarea name="subtitle[<?= $i ?>]"><?= $matches[4] ?></textarea>
 			</span>
 			<span class="translation">
-<?			if($translation_language && count($translations) == count($subtitles)):
+<?			if($translation_language && isset($translations[$i])): //count($translations) == count($subtitles)):
 				preg_match("/([\d]+)[\s]+([\d:,]+)[\s->]+([\d:,]+)[\s]+([^$]+)/", $translations[$i], $translation_matches);
 			endif; ?>
 				<textarea name="translation[<?= $i ?>]"><?= isset($translation_matches[4]) ? $translation_matches[4] : "" ?></textarea>
 			</span>
 		</div>
-	</form>
 
 <?			else: ?>
 	<p class="broken"><? print_r($section) ?></p>
 <?			endif; ?>
 <?		endforeach; ?>
+	</form>
 
 <?	else: ?>
 	<p>No valid linebreak indicator found - your project file may be corrupt</p>
