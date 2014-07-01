@@ -56,14 +56,15 @@ Util.Objects["translation"] = new function() {
 			// add tools
 			node.tools = u.ae(node, "ul", {"class":"tools"});
 
+			// disabled for now - Henriette keeps deleting by mistake
 			// add delete button
-			node.bn_delete = u.ae(node.tools, "li", {"class":"delete", "html":"Delete"});
-			node.bn_delete.node = node;
-
-			u.e.click(node.bn_delete);
-			node.bn_delete.clicked = function() {
-				this.node.scene.deleteNode(this.node);
-			}
+			// node.bn_delete = u.ae(node.tools, "li", {"class":"delete", "html":"Delete"});
+			// node.bn_delete.node = node;
+			//
+			// u.e.click(node.bn_delete);
+			// node.bn_delete.clicked = function() {
+			// 	this.node.scene.deleteNode(this.node);
+			// }
 
 			node.bn_translate = u.ae(node.tools, "li", {"class":"translate", "html":"Translate"});
 			node.bn_translate.node = node;
